@@ -1,4 +1,19 @@
-# Comandos de configuração
+# Comandos new
 
-- `dotnet new console -n NomeDaSolucao -o NomeDoProjeto` -> Cria um projeto console
-- `dotnet new webapi -n NomeDaSolucao -o NomeDoProjeto` -> Cria um projeto webapi
+- `dotnet new list` -> Lista os templates
+- `dotnet new <TEMPLATE>` -> Cria um projeto baseado num template (Ex: console, webapi, worker, xunit, angular)
+- `dotnet new console -n NomeDoProjeto -o NomeDoDiretorio` -> Cria um projeto console
+
+
+# Comandos build
+
+- `dotnet build` -> Faz build do projeto
+
+# Comandos run
+
+- `dotnet run` -> Executa o projeto
+
+# Comandos watch
+
+- `dotnet watch <COMMAND>` -> É usado em conjunto com comandos como `run`, `test`, `build` para monitorar arquivos em busca de alteracões e atualizar automaticamente (hot reload).
+- `dotnet watch run` -> Executa o projeto e fica observando alteracões.
