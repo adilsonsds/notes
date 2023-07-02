@@ -11,6 +11,7 @@
 # Comando run
 
 - `dotnet run` -> Executa o projeto
+- `dotnet run --project MeuProjeto/MeuProjeto.csproj` -> Executa o projeto
 
 # Comando watch
 
