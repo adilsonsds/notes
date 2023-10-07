@@ -6,3 +6,7 @@
 - `git config --global init.defaultBranch main`
 - `git config --global core.editor vscode`
 - `git config --unset <CHAVE>` -> Remover uma configuracão
+
+# Arquivo .gitignore
+
+- `dotnet new gitignore` -> Gera um arquivo .gitignore para projetos dotnet

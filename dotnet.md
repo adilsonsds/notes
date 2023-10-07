@@ -35,3 +35,7 @@
 - `dotnet add Prjeto1.csproj reference **/*.csproj` -> Adiciona múltiplas referências usando pattern (Unix)
 - `dotnet remove Prjeto1.csproj reference Projeto2.csproj` -> Remove uma referência
 - `dotnet list Prjeto1.csproj reference` -> Lista as referências
+
+# Git ignore
+
+- `dotnet new gitignore` -> Gera um arquivo .gitignore para projetos dotnet
