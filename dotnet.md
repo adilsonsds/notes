@@ -39,3 +39,8 @@
 # Git ignore
 
 - `dotnet new gitignore` -> Gera um arquivo .gitignore para projetos dotnet
+
+# Comando add package
+
+- `dotnet add package <PACKAGE_NAME>` -> Instala um pacote nuget
+- `dotnet add package Newtonsoft.Json --version 12.0.1` -> Instala um pacoter nuget com uma versão específica
