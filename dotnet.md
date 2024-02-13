@@ -12,6 +12,7 @@
 
 - `dotnet run` -> Executa o projeto
 - `dotnet run --project MeuProjeto/MeuProjeto.csproj` -> Executa o projeto
+- `dotnet run --launch-profile Homologation` -> Executa o projeto com um profile específico
 
 # Comando watch
 
@@ -44,3 +45,10 @@
 
 - `dotnet add package <PACKAGE_NAME>` -> Instala um pacote nuget
 - `dotnet add package Newtonsoft.Json --version 12.0.1` -> Instala um pacoter nuget com uma versão específica
+
+# Docker
+
+## Entrypoints
+
+- `ENTRYPOINT ["dotnet", "MyProject.dll"]` -> Define o entrypoint do dockerfile
+- `ENTRYPOINT ["dotnet", "MyProject.dll", "--launch-profile Production"]` -> Define o entrypoint do dockerfile e executa o app com um profile específico
