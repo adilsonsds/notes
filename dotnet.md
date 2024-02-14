@@ -52,3 +52,11 @@
 
 - `ENTRYPOINT ["dotnet", "MyProject.dll"]` -> Define o entrypoint do dockerfile
 - `ENTRYPOINT ["dotnet", "MyProject.dll", "--launch-profile Production"]` -> Define o entrypoint do dockerfile e executa o app com um profile específico
+
+# AWS
+
+## Lambda Templates
+
+- `dotnet tool install -g Amazon.Lambda.Tools` -> Instala e/ou atualiza ferramentas para AWS Lambda
+- `dotnet new -i Amazon.Lambda.Templates` -> Instala os templates para AWS Lambda
+- `dotnet new lambda.EmptyFunction -n MyProjectName` -> Cria um projeto .NET usando template para AWS Lambda 
