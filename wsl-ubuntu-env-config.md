@@ -55,3 +55,10 @@ git add .
 git commit -m "test commit"
 git push
 ```
+
+
+## Setup do Docker
+
+1. Siga as intruções de instalação do Docker disponível em [Docker.docs](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository).
+
+2. Para executar os comandos do docker sem o `sudo`, adicione seu usuário ao grupo `docker` seguindo as intruções disponíveis em [Linux postinstall](https://docs.docker.com/engine/install/linux-postinstall/).
