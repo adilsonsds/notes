@@ -20,3 +20,9 @@
 # Integracao
 
 - `\\wsl$` -> Acessar arquivos nas distribuicoes pelo windows explorer
+
+
+# Configuracao de ambiente Ubuntu no WSL
+
+1. `wsl --install -d Ubuntu-22.04` -> Instalar o Ubuntu
+2. `sudo apt-get install git-all` -> Instalar o git
