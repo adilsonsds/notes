@@ -7,6 +7,12 @@
 - `git config --global core.editor vscode`
 - `git config --unset <CHAVE>` -> Remover uma configuracão
 
+# Comando submodule
+
+- `git submodule` -> Lista os submódulos
+- `git submodule init` -> Inicializa um submodulo (apenas na primeira vez)
+- `git submodule update --remote` -> Atualiza todos para seus últimos commits
+
 # Arquivo .gitignore
 
 - `dotnet new gitignore` -> Gera um arquivo .gitignore para projetos dotnet
