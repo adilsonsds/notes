@@ -1,29 +1,49 @@
-# Comando build
-Produz uma imagem. Requer arquivo Dockerfile.
+# Comandos Docker
 
-- `docker build .` -> Faz o build do Dockerfile no diretório atual.
-- `docker build . -t olamundo` -> Faz o build do Dockerfile e produz uma imagem com apelido olamundo
+## Build
+Produz uma imagem. Requer um Dockerfile.
 
-# Comando push
+- `docker build .` -> Constrói o Dockerfile no diretório atual.
+- `docker build . -t olamundo` -> Constrói o Dockerfile e produz uma imagem com a tag `olamundo`.
+
+## Push
 Publica uma imagem.
 
-- `dcoker push`
+- `docker push`
 
-# Comando run
+## Run
+Executa uma imagem Docker.
 
-- `docker run olamundo` -> Executa uma imagem pelo apelido
-- `docker run 4ec58c40b86f` -> Executa uma imagem pelo ID
+- `docker run olamundo` -> Executa uma imagem pela tag.
+- `docker run 4ec58c40b86f` -> Executa uma imagem pelo ID.
 
-# Comando images
+## Images
+Lista imagens Docker.
 
-- `docker images` -> Lista as imagens 
+- `docker images` -> Lista todas as imagens.
 
-# Comando ps
-- `docker ps -a` -> Lista todas as images
-- `docker ps -aq` -> Lista os ID de todas as images
+## PS
+Lista contêineres Docker.
 
-# Comando rm
+- `docker ps -a` -> Lista todos os contêineres.
+- `docker ps -aq` -> Lista os IDs de todos os contêineres.
 
-- `docker rm -f 4ec58c40b86f` -> Remove uma imagem pelo ID
-- `docker rm -f 4ec58c40b86f d9d1dd146c63` -> Remove uma lista de imagens pelo ID
-- `docker rm -f $(docker ps -aq)` -> Remove todas as imagens forçadamente
+## RM
+Remove contêineres Docker.
+
+- `docker rm -f 4ec58c40b86f` -> Remove um contêiner pelo ID.
+- `docker rm -f 4ec58c40b86f d9d1dd146c63` -> Remove uma lista de contêineres pelo ID.
+- `docker rm -f $(docker ps -aq)` -> Remove forçadamente todos os contêineres.
+
+## Compose
+Gerencia aplicações Docker multi-contêiner.
+
+- `docker-compose up` -> Cria e inicia contêineres.
+- `docker-compose build` -> Constrói imagens para serviços definidos em um `docker-compose.yml`.
+- `docker-compose logs` -> Visualiza logs dos contêineres.
+- `docker-compose restart` -> Reinicia contêineres.
+- `docker-compose ps` -> Lista contêineres.
+- `docker-compose scale` -> Escala o número de instâncias de contêineres.
+- `docker-compose start` -> Inicia contêineres.
+- `docker-compose stop` -> Para contêineres.
+- `docker-compose down` -> Para e remove todos os contêineres e seus componentes como redes, imagens e volumes.
